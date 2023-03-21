@@ -1,18 +1,11 @@
 import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
-import { View, Text } from "react-native";
+import Navigation from "./nav";
 
 const App = () => {
   return (
     <NavigationContainer>
-      <View style={{
-        flex: 1,
-        backgroundColor: 'black',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}>
-        <Text>Hello World!</Text>
-      </View>
+      <Navigation />
     </NavigationContainer>
   )
 }
