@@ -1,14 +1,15 @@
 import React from "react";
-import { View } from "react-native";
+import { Box, Text } from "@/atoms";
 import { DrawerContentComponentProps } from '@react-navigation/drawer';
+import { SafeAreaView } from "react-native";
 
 const Sidebar: React.FC<DrawerContentComponentProps> = () => {
 	return (
-		<View style={{
-			backgroundColor: '#212021',
-			flex: 1,
-		}}>
-		</View>
+		<Box flex={1} bg="$sidebarBackground">
+			<SafeAreaView>
+        <Text variant="sidebar" m="lg">Mail UI</Text>
+      </SafeAreaView>
+		</Box>
 	)
 }
 
