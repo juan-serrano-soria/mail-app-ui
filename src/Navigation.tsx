@@ -1,11 +1,22 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
+import { NavigatorScreenParams } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Sidebar from "./components/Sidebar";
 import MainScreen from "./screens/MainScreen";
 
+export type HomeDrawerParamList = {
+  Main: {}
+}
 
-const Stack = createNativeStackNavigator();
-const Drawer = createDrawerNavigator();
+export type RootStackParamList = {
+  Home: NavigatorScreenParams<HomeDrawerParamList>
+  Detail: {
+    noteId: string
+  }
+}
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
+const Drawer = createDrawerNavigator<HomeDrawerParamList>();
 
 function Home() {
   return (

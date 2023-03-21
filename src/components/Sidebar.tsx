@@ -4,8 +4,10 @@ import { DrawerContentComponentProps } from '@react-navigation/drawer';
 
 const Sidebar: React.FC<DrawerContentComponentProps> = () => {
 	return (
-		<View>
-
+		<View style={{
+			backgroundColor: '#212021',
+			flex: 1,
+		}}>
 		</View>
 	)
 }
