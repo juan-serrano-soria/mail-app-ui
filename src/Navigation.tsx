@@ -1,6 +1,6 @@
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import MainScreen from "./screens/main";
+import MainScreen from "./screens/MainScreen";
 
 
 const Stack = createNativeStackNavigator();
