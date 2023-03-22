@@ -6,9 +6,11 @@ export interface MailListItemProps extends Mail {}
 
 const MailListItem: React.FC<MailListItemProps> = props => {
   return (
-    <Box>
-      <Text>{props.title}</Text>
-      <Text>{props.body}</Text>
+    <Box bg="$background">
+      <Box  bg="$background" px="lg" py="sm">
+        <Text>{props.title}</Text>
+        <Text>{props.body}</Text>
+      </Box>
     </Box>
   )
 }
