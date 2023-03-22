@@ -2,12 +2,15 @@ import React from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import Navigation from "./Navigation";
 import { ThemeProvider } from "@shopify/restyle";
-import light from "@/themes/light";
+import { useAtom } from "jotai";
+import { activeThemeAtom } from "./state/theme";
 
 const App = () => {
+  const [activeTheme] = useAtom(activeThemeAtom);
+
   return (
     <NavigationContainer>
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={activeTheme}>
         <Navigation />
       </ThemeProvider>
     </NavigationContainer>
