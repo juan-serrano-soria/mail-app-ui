@@ -15,8 +15,6 @@ const p = {
   paper300: '#767577',
   paper900: '#202020',
   blue70: '#2185d0',
-  navy20: '#171a21',
-  navy900: '#b9babc'
 }
 
 const theme = createTheme({
@@ -47,8 +45,8 @@ const theme = createTheme({
     $foreground: p.paper900,
     $navbarBackground: p.paper10,
     $navbarBorderBottom: p.paper100,
-    $sidebarBackground: p.navy20,
-    $sidebarForeground: p.navy900,
+    $sidebarBackground: p.paper20,
+    $sidebarForeground: p.paper900,
     $sidebarSeparator: p.paper00 + '20',
     $headerBarBackground: p.paper20,
     $fieldInputBackground: p.paper00,
