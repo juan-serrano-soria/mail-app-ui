@@ -23,8 +23,11 @@ function Home() {
     <Drawer.Navigator
       initialRouteName="Main"
       screenOptions={{
-        drawerType: 'back',
+        drawerType: 'front',
         swipeEdgeWidth: 200,
+        drawerStyle: {
+          width: "75%",
+        },
       }}
       drawerContent={props => <Sidebar {...props} />}
     >
