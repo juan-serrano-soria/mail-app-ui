@@ -1,4 +1,4 @@
-import { Box, Text } from "@/atoms";
+import { Box, Text, TouchableOpacity } from "@/atoms";
 import HeaderBar from "@/components/HeaderBar";
 import FeatherIcon from "@/components/FeatherIcon";
 import MailList from "@/components/MailList";
@@ -9,8 +9,15 @@ export default function MainScreen() {
     <Box flex={1} justifyContent="center" alignItems="center">
       <MailList />
       <HeaderBar>
-        <FeatherIcon name="menu" size={22}/>
-        <FeatherIcon name="more-vertical" size={22}/>
+        <TouchableOpacity m="xs" p="xs" rippleBorderless>
+          <FeatherIcon name="menu" size={22}/>
+        </TouchableOpacity>
+        <Box flex={1} alignItems="center">
+          <Text>All mail</Text>
+        </Box>
+        <TouchableOpacity m="xs" p="xs" rippleBorderless>
+          <FeatherIcon name="user" size={22}/>
+        </TouchableOpacity>
       </HeaderBar>
     </Box>
   )
